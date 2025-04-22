@@ -1,0 +1,14 @@
+kind: Service # Service-Proxy
+apiVersion: v1
+metadata:
+  name: nginx-service
+  namespace: nginx
+
+spec:
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80  # exposed port to service-proxy or user
+      targetPort: 80 # of which pod's port
+  type: ClusterIP
