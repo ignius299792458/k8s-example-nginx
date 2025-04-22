@@ -1,0 +1,11 @@
+# Nginx K8S setup
+  - cron_job.yml
+  - daemonsets.yml
+  - deployment.yml
+  - job.yml
+  - namespace.yml
+  - persistence-volume.yml
+  - persistent-volume-claim.yml
+  - pod.yml
+  - replicasets.yml
+  - service-proxy.yml
